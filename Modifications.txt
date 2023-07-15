@@ -1,0 +1,10 @@
+To make the code works, you have to modify certains paths to your laptop like : 
+
+driver = webdriver.Edge(executable_path=r'C:\Users\LENOVO\Desktop\msedgedriver.exe')
+driver = webdriver.Chrome(r'C:\Users\LENOVO\Desktop\chromedriver.exe')
+button_pos = pyautogui.locateOnScreen(r'C:\Users\LENOVO\Desktop\load_more_reviews.jpg')
+review_df.to_csv(r'C:\Users\LENOVO\Desktop\review.csv', index=False)
+with open(r'C:\Users\LENOVO\Desktop\reviews.json', 'w') as file:
+review_pics_df.to_csv(r'C:\Users\LENOVO\Desktop\review_pics.csv', index=False)
+
+and download and move the load_more_reviews picture to the path chosen for button_pos 
